@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    *{
+      padding: 0;
+      margin: 0;
+    }
+
+
+      .clear { clear:both; height:0; overflow:hidden; }
+      .float_left { float:left; }
+      .float_right { float:right; }
+      .float_center { float:center; }
+      a:link{text-decoration: none; color: white;}
+      a:visited{text-decoration: none; color: white;}
+      a:active{text-decoration: none; color: white;}
+      a:hover{text-decoration: none; color:rgb(255, 123, 0);}
+
+      header{
+          background-color:black;
+          color: white;
+          padding: 10px 50px;
+      }
+      header>nav>ul>li{
+          float: left;
+          list-style: none;
+          padding: 10px 10px;
+      }
+      header>h1{
+          font-family: 'Kirang Haerang', cursive;font-family: 'Kirang Haerang', cursive;
+          margin: 0px;
+          #title_style{
+              text-align: center;
+          }
+          #visual_title_top{
+              font-family: 'Kirang Haerang', cursive;font-family: 'Kirang Haerang', cursive;
+              font-size: 20px;
+              color: white;
+              font-weight: normal;
+              margin: 5px;
+          }
+          header>nav>ul>li{
+              float: left;
+              list-style: none;
+              padding: 0px 10px;
+          }
+          #main_visual{
+              /*height: 500px; 내용물이 많아질때 쓰면 안좋음*/
+              background-image: url("IMAGES/main_image.jpg");
+              background-size: 100% auto ; /*가로는 200으로 할건데 세로는 오토로 자동으로 조절해주라*/
+              background-size: cover;
+              background-repeat: no-repeat;
+              /* repeat반복한다, no-repeat 반복안한다 repeat-x x좌표로 반복 y는 y좌표로 반복*/
+              background-color: black;
+              background-position: 50% 50%; /*가로 세로 50%는 가운데 그림을 가로 기준으로 가운데 세로를 세로 기준으로 가운데*/
+
+              color: black; /* 상속 */
+              text-align: left; /*가운데 정렬*/
+              padding: 300px 100px; /*상하 100 , 좌우 0 마진은 외부여백 영역, 패딩은 내부여백*/
+          }
+          #main_visual h2{
+              font-size: 40px;
+              font-weight: bold;
+              letter-spacing: 15px;
+              color: white;
+              margin: 5px; /*새로여백을 지정해서 원래 설정되어 있는 여백을 지움*/
+          }
+          #main_visual img{
+              margin: 0px 0px 0px 0px; /*한번 이름하면 네면 모두 설저되고 네 면 다르게 설정할 경우 상 우 좌 하 (시계 방향 설정)*/
+          }
+          #wrap{
+              min-width: 900px; /*900이하로는 절대 작아짐ㄴ안되요*/
+              max-width: 1920px; /*이 숫자 이상 커지면 안되욘*/
+              margin-left: auto;
+              margin-right: auto;
+          }
+    </style>
+  </head>
+  <body>
+    <header>
+
+        <nav class="float_right">
+            <ul>
+                <li><a href="index.html">한글 서체꼴</a></li>
+                <li><a href="h2.html">한글 사이사이</a></li>
+                <li><a href="h3.html">한글 크기와 무게</a></li>
+                <li><a href="e1.html">영어 서체꼴</a></li>
+                <li><a href="e2.html">영어 사이사이</a></li>
+                <li><a href="e3.html">영어 크기와 무게</a></li>
+                <div class="clear"></div>
+            </ul>
+        </nav>
+          <div class="clear"></div>
+        </header>
+        <img src="img/lato03.gif" width='100%' height='100%' border=0 alt='' usemap='~'>
+        <img src="img/lato3.jpg" width='100%' height='100%' border=0 alt='' usemap='~'>
+
+  </body>
+</html>
